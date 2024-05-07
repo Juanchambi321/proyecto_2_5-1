@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+}
+
+img{
+    margin-top: 3%;
+    width: 27%;
+    height: 27%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+button {
+    background: #47476B;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    margin: 20px auto 0 auto;
+    /* Agregamos margen superior de 20px para mover el botón hacia abajo */
+    display: block;
+}
+
+button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
