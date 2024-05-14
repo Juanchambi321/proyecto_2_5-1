@@ -1,25 +1,64 @@
 
 header{
+    align-items: center;
+    
+    text-align: center;
+    display:flex;
     background: #47476B;
-    height: 80px;
+    height: 145px;
     width: 100%;
     margin: 0px;
 }
 
+.img_h{
+    margin-right:20px ;
+    margin-left: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    
+}
+.icono_menu{
+    
+    height: 140px;
+    width: 140px;
+    display: flex;
 
+}
+.icono_usuario{
+    height: 120px;
+    width: 120px;
+    display: flex;
 
+}
 body{
-    background: black;
+    background: #000000;
    
 }
-
-.controls {
-    width: 100%;
+.controls_B{
+    height: 80px;
+    width: 700px;
     background: #B2B1C1;
     padding: 10px;
+    height: 100;
     border-radius: 12px;
-    margin-bottom: 16px;
-    border: 1px solid #47476B;
+    border: 0px solid #47476B;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+
+}
+
+.controls_A {
+    margin-left: 30px;
+    height: 30px;
+    width: 329px;
+    background: #B2B1C1;
+    padding: 10px;
+    height: 100;
+    border-radius: 12px;
+    border: 0px solid #47476B;
     font-family: 'calibri';
     font-size: 18px;
     color: white;
@@ -28,11 +67,58 @@ body{
 
 .escribe{
     width: 400px;
-    padding: 30px;
+    padding: 25px;
     margin: auto;
-    margin-top: px;
-    border-radius: 4px;
+    margin-top: 12px;
     font-family: 'calibri';
     color: white;
+    display: auto;
+    
+}
+.buscar{
+    height: 50px;
+    margin-top: 30px;
+    width: 100%;
+    background: #B2B1C1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #47476B;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    
+}
+.boton_publicar{
+    border: 0px;
+    margin: auto;
+    height: 49px;
+    background: #B2B1C1;
+    transform: scale(1);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.boton_usuario{
+    background: #47476B;
+    border: 0px;
+    margin-right: -41%;
+    margin-left: 20%;
+}
+.boton_menu{
+    background: #47476B;
+    margin-left: 45%;
+    border: 0px;
+}
+
+.img_b{
+    
+    width: 40px; /* Ajusta este valor según tus necesidades */
+    height: 48px;
+    position: absolute;
+    margin-top: -30px;
+    margin-right: 10px; /* Ajusta este valor según tus necesidades */
+     /* Espacio entre la imagen y el texto */
+
 }
 
