@@ -1,7 +1,8 @@
+body{
 
+}
 header{
     align-items: center;
-    
     text-align: center;
     display:flex;
     background: #47476B;
@@ -10,6 +11,76 @@ header{
     margin: 0px;
 }
 
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.abrir-menu {
+    margin-left: 30px;
+    margin-right: 40px;
+    transform: scale(5);
+    display: none;
+}
+.cerrar-menu{
+    display: none;
+    transform: scale(2);
+}
+
+@media screen and (max-width: 2000px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(71,71,107);
+background: linear-gradient(90deg, rgba(71,71,107,1) 50%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}
 .img_h{
     margin-right:20px ;
     margin-left: 20px;
@@ -102,12 +173,10 @@ body{
 .boton_usuario{
     background: #47476B;
     border: 0px;
-    margin-right: -41%;
     margin-left: 20%;
 }
 .boton_menu{
     background: #47476B;
-    margin-left: 45%;
     border: 0px;
 }
 
