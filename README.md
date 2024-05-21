@@ -2,4 +2,6 @@
 
 FORO DE VIDEOJUEGOS 
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?3CA430EC334BCCBC16C6D2273D2D83D0348F
+ANIMACION DE BURBUJA DE FONDO:
+
+https://www.youtube.com/watch?v=fbn2aVaSb3E
