@@ -1,4 +1,3 @@
----https://www.tutorialspoint.com/how-do-i-connect-an-html-web-page-to-a-database
 
 create schema PlayStick;
 
@@ -80,21 +79,54 @@ foreign key (usuario_B) references Usuario(ID),
 foreign key (publicaion_usuario) REFERENCES Publicaciones(id),
 foreign key (comentarios_usuario) REFERENCES Comentarios(id),
 
-)
+);
 
 
---CREATE TABLE MeGusta(
- -- UsuarioID INT,
- -- PublicacionID INT,
---FOREIGN KEY (UsuarioID)REFERENCES Usuarios(ID),
- -- FOREIGN KEY (PublicacionID)REFERENCES Publicaciones(ID),
---PRIMARY KEY (UsuarioID, PublicacionID)
---);
+INSERT INTO Administradores (ID, Nombre, Contraseña, Usuario_B, Publicacion_Usuario, Comentarios_Usuario, Bloquear) VALUES 
+(1, 'Admin1', 'adminpassword1', 1, 1, 1, true),
+(2, 'Admin2', 'adminpassword2', 2, 2, 2, false),
+(3, 'Admin3', 'adminpassword3', 3, 3, 3, true);
 
---CREATE TABLE PublicacionesGuardadas(
- -- UsuarioID INT,
---  PublicacionID INT,
- -- FOREIGN KEY (UsuarioID)REFERENCES Usuarios(ID),
-  --FOREIGN KEY (PublicacionID)REFERENCES Publicaciones(ID),
- -- PRIMARY KEY (UsuarioID, PublicacionID)
---);
+INSERT INTO Categorias (Nombre, Tematica) VALUES 
+('Accion', 'Videojuegos de acción'),
+('Aventura', 'Videojuegos de aventura'),
+('Deportes', 'Videojuegos de deportes');
+
+INSERT INTO Publicaciones (UsuarioID, Foto, Descripcion, Categoria, Opinion, Guardados) VALUES 
+(1, 'foto1.jpg', 'Descripción de la primera publicación', 'Accion', 1, 1),
+(2, 'foto2.jpg', 'Descripción de la segunda publicación', 'Aventura', 2, 2),
+(3, 'foto3.jpg', 'Descripción de la tercera publicación', 'Deportes', 3, 3);
+
+INSERT INTO Likes (Publicacion_L) VALUES 
+(1),
+(2),
+(3);
+
+INSERT INTO Guardados (Publicacion_G) VALUES 
+(1),
+(2),
+(3);
+
+INSERT INTO Biblioteca (ID_Biblioteca, Me_Gusta, Guardar) VALUES 
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3);
+
+
+INSERT INTO Calificacion (ID_Calificacion, Lik, Vistas) VALUES 
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3);
+
+INSERT INTO Comentarios (PublicacionID, UsuarioID, Comentario) VALUES 
+(1, 1, 'Primer comentario en la primera publicación'),
+(2, 2, 'Segundo comentario en la segunda publicación'),
+(3, 3, 'Tercer comentario en la tercera publicación');
+
+
+INSERT INTO Administradores (ID, Nombre, Contraseña, Usuario_B, Publicacion_Usuario, Comentarios_Usuario, Bloquear) VALUES 
+(1, 'Admin1', 'adminpassword1', 1, 1, 1, true),
+(2, 'Admin2', 'adminpassword2', 2, 2, 2, false),
+(3, 'Admin3', 'adminpassword3', 3, 3, 3, true);
+
+
