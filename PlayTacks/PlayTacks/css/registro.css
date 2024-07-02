@@ -287,7 +287,7 @@ body {
   margin: 30px 0 0 0;
 }
 
-label {
+.form label {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -297,7 +297,7 @@ label {
   box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 }
 
-label input {
+.form label input {
   width: 100%;
   padding: 10px;
   background-color: #fff;
@@ -307,12 +307,11 @@ label input {
   color: #333;
 }
 
-label i {
+.form label i {
   color: #a7a7a7;
 }
 
-
-.custom-button,.button {
+.custom-button {
   display: inline-block;
   background-color: #9191bd;
   color: #fff;
@@ -325,7 +324,7 @@ label i {
   text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
-.custom-button,.button:hover {
+.custom-button:hover {
   background-color: #7a7aa5;
   /* Cambia el color de fondo al pasar el mouse */
 }
