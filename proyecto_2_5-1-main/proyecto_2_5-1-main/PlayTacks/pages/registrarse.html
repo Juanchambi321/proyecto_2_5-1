@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registro.css">
+    <title>Registro</title>
+</head>
+<body>
+    <nav>
+        <button type="button"><a href="../pages/inicio_sesion.html">Atras</a></button>
+    </nav>
+    <header>
+        <img src="../img/logotipo_inicio.jpeg" alt="Logotipo de inicio">
+    </header>
+    <form action="../php/registro.php" method="post">
+        <section class="form-register">
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+            <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+            <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña" required>
+            <button type="submit" name="submit">Registrarse</button>
+            <p><a href="../pages/inicio_sesion.html">¿Ya tengo Cuenta?</a></p>
+        </section>
+    </form>
+</body>
+</html>
