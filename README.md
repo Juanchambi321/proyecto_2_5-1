@@ -11,3 +11,6 @@ https://www.youtube.com/watch?v=gM11EGYZAiM
 
 PAGINA WED DE ANIMACIONES DE BACKGROUND:
 https://animatedbackgrounds.me/
+
+bot :https://github.com/KevinNovak/Discord-Bot-TypeScript-Template?tab=readme-ov-file
+
