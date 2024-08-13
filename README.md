@@ -14,3 +14,6 @@ https://animatedbackgrounds.me/
 
 bot :https://github.com/KevinNovak/Discord-Bot-TypeScript-Template?tab=readme-ov-file
 
+el proyecto de un foro parecido a facebook con 1 decada de tiempo:https://github.com/Wedge/wedge
+
+
