@@ -45,13 +45,14 @@
                     <!--Login-->
                     <form method="post" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico">
+                        <input type="email" placeholder="Correo Electronico">
                         <input type="password" placeholder="Contraseña">
-                        <button>Entrar</button>
+
+                        <button type="submit">Entrar</button>
                     </form>
 
                     <!--Register-->
-                    <form action="post" class="formulario__register">
+                    <form method="post" class="formulario__register">
                         <h2>Regístrarse</h2>
                         <input type="text" placeholder="Nombre completo">
                         <input type="text" placeholder="Correo Electronico">
