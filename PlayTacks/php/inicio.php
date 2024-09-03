@@ -37,7 +37,7 @@
                <a href="#" class="login__forgot">Olvidaste la contraseña?</a>
             </div>
 
-            <button type="submit" class="login__button"><a href="pagina_principal2.html">Entrar</a></button>
+            <button type="submit" name="register "class="login__button"><a href="pagina_principal2.html">Entrar</a></button>
 
             <div class="login__register">
                Don't have an account? <a href="registro.html">Registrarse</a><br>
