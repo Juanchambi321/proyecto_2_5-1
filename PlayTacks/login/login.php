@@ -30,7 +30,7 @@
                   <i class="ri-lock-2-fill"></i>
                </div>
             </div>
-
+            
             <div class="login__check">
                <div class="login__check-box">
                   <input type="checkbox" class="login__check-input" id="user-check">

@@ -23,7 +23,6 @@
 
 <body>
     
-
         <main>
 
             <div class="contenedor__todo">
@@ -43,24 +42,33 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form method="post" class="formulario__login">
+                    <form method="POST" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="email" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
+                        <?php
+                        include "conexion.php";
+                        include "controlador.php";
+                        ?>
+                        <input type="email" name="email" placeholder="Correo Electronico">
+                        <input type="password" name="password"placeholder="Contraseña">
 
-                        <button type="submit">Entrar</button>
+
+                        <input name="boton" class="nose" type="submit" value="INICIAR SESION">
                     </form>
 
                     <!--Register-->
                     <form method="post" class="formulario__register">
+                        
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo">
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
-                        <button>Regístrarse</button>
+                        <input type="text" name="nombre" placeholder="Nombre completo">
+                        <input type="email" nmae="correo" placeholder="Correo Electronico">
+                        <input type="text" name="usuario" placeholder="Usuario">
+                        <input type="password" name="password" placeholder="Contraseña">
+                        <input class="button" type="submit" name="register" value="registrarse" required>
                     </form>
                 </div>
+                <?php
+                        include("registro.php");
+                ?>
             </div>
 
         </main>
