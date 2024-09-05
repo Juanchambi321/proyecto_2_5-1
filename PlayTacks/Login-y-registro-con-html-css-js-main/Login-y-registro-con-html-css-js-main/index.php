@@ -60,7 +60,7 @@
                         
                         <h2>Regístrarse</h2>
                         <input type="text" name="nombre" placeholder="Nombre completo">
-                        <input type="email" nmae="correo" placeholder="Correo Electronico">
+                        <input type="email" name="correo" placeholder="Correo Electronico">
                         <input type="text" name="usuario" placeholder="Usuario">
                         <input type="password" name="password" placeholder="Contraseña">
                         <input class="button" type="submit" name="register" value="registrarse" required>
